@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code or these certificates, please cite the thesis."
+title: "Hales-Jewett lower-bound certificates and SAT encoders"
+authors:
+  - family-names: Mouhib
+    given-names: Younes
+    affiliation: "ETH Zurich"
+license: MIT
+repository-code: "https://github.com/ymouhib/hj-certificates"
+year: 2026
+references:
+  - type: thesis
+    title: "Improving Lower Bounds on Hales-Jewett Numbers: Symmetric Colorings, SAT Solvers, Line-Family Variants, and Forcing Structures"
+    authors:
+      - family-names: Mouhib
+        given-names: Younes
+    institution:
+      name: "ETH Zurich"
+    year: 2026
+    thesis-type: "Master's thesis"

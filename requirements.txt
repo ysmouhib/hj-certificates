@@ -1,0 +1,5 @@
+# Only the SAT drivers in src/ need these. The certificate verifiers
+# (verify_all.py at the repository root, and src/verify_certificates.py)
+# use the Python standard library only and require nothing here.
+python-sat>=1.8.dev13        # provides pysat; solvers g42 (Glucose), cd19 (CaDiCaL)
+python-cryptosat>=5.11.0     # provides pycryptosat; used by src/hj1_3_interval.py

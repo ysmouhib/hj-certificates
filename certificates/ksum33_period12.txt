@@ -1,0 +1,2 @@
+# 12-periodic palette, no mono 3-AP of gap<=11 => kappa_sum(3,3)=11
+201211012002

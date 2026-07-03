@@ -1,0 +1,2 @@
+# 4-colouring of 56 consecutive integers, no mono injective solution of z+2x=3y; R_4>=57
+32013003130311321322210002211032220120031301113013223120
