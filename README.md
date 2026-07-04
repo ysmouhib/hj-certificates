@@ -1,5 +1,20 @@
 [![verify-certificates](https://github.com/ysmouhib/hj-certificates/actions/workflows/verify.yml/badge.svg)](https://github.com/ysmouhib/hj-certificates/actions/workflows/verify.yml)
 
+## Papers
+
+Two arXiv preprints extract and consolidate the record bounds proved here:
+
+- Y. Mouhib and L. Halbeisen, *Improved Lower Bounds for the Hales–Jewett Numbers
+  via Symmetric Colorings*, arXiv:2606.22155 [math.CO], 2026 —
+  https://arxiv.org/abs/2606.22155
+  Establishes HJ(3,3) ≥ 22 and HJ(4,2) ≥ 14; certificates `hj33_ge22_T21.cert`
+  and `hj42_ge14_T13.cert`.
+- Y. Mouhib, *One-Weight Colorings, the Symmetric Class, and Lower Bounds for
+  Hales–Jewett Numbers* (single-author), arXiv:2607.02226 [math.CO], 2026 —
+  https://arxiv.org/abs/2607.02226
+
+
+
 # Hales–Jewett lower-bound certificates and SAT encoders
 
 Code and machine-checkable certificates accompanying the MSc thesis
