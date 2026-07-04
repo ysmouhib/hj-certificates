@@ -1,3 +1,5 @@
+[![verify-certificates](https://github.com/ysmouhib/hj-certificates/actions/workflows/verify.yml/badge.svg)](https://github.com/ysmouhib/hj-certificates/actions/workflows/verify.yml)
+
 # Hales–Jewett lower-bound certificates and SAT encoders
 
 Code and machine-checkable certificates accompanying the MSc thesis
