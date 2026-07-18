@@ -1,7 +1,6 @@
 __pycache__/
 *.pyc
 *.cnf
-*.log
 .DS_Store
 .venv/
 venv/

@@ -1,0 +1,5 @@
+# generated 2026-07-18 during the repository rebuild
+instance: I_(0,2,3,5),14 -- 69 used levels, 443 homothets, 886 clauses
+solver cadical153: UNSAT (0.01s)
+solver glucose42: UNSAT (0.01s)
+solver minisat22: UNSAT (0.01s)

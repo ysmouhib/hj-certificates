@@ -1,0 +1,10 @@
+# generated 2026-07-18 during the repository rebuild
+# NOTE: re-confirmation runs; the thesis' original runs used independent encoders/solvers
+instance: N=26, r=3, 3-APs of gap<=12; sha256 ea94485e76c4f4c35b0343953383600c7e49384e5b9151bd2253fe7333e4b890
+  solver cadical153: SAT (0.00s)
+  solver glucose42: SAT (0.00s)
+  solver minisat22: SAT (0.00s)
+instance: N=27, r=3, 3-APs of gap<=12; sha256 8b34caaec305ce701ce221a8c739211fcd2167ae984c01bda732b468c1e2bb51
+  solver cadical153: UNSAT (0.05s)
+  solver glucose42: UNSAT (0.05s)
+  solver minisat22: UNSAT (0.02s)

@@ -1,0 +1,4 @@
+# generated 2026-07-18 during the repository rebuild
+443 indicators P_C over monomials of degree <= 3 on 69 levels
+rank = 443 (linearly independent); 1 NOT in span => no degree-3 refutation
+degrees 4 and 5 (Thm 5.6) are heavier rank computations: see TODO.md

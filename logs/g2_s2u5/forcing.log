@@ -1,0 +1,7 @@
+# generated 2026-07-18 during the repository rebuild
+# NOTE: re-confirmation runs; the thesis' original runs used independent encoders/solvers
+instance: window N=29, r=2, S=[0, 2, 7]; 150 clauses, 58 variables; 46 homothets
+dimacs-sha256: 143ccb2d89b9135185c76072c7d896043a89c23a2345ae481525439b98b6d63b
+solver cadical153: UNSAT  (0.00s)
+solver glucose42: UNSAT  (0.00s)
+solver minisat22: UNSAT  (0.00s)

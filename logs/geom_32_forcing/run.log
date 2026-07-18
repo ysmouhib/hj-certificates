@@ -1,0 +1,5 @@
+# generated 2026-07-18 during the repository rebuild
+instance: all 49 geometric lines of [3]^3 (the 3x3x3 no-draw statement), 27 vars
+solver cadical153: UNSAT (0.00s)
+solver glucose42: UNSAT (0.00s)
+solver minisat22: UNSAT (0.00s)

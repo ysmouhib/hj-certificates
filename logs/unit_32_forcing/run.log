@@ -1,0 +1,5 @@
+# generated 2026-07-18 during the repository rebuild
+instance: Z_3^3, 63 unit lines, 27 vars, 126 clauses
+solver cadical153: UNSAT (0.00s)
+solver glucose42: UNSAT (0.00s)
+solver minisat22: UNSAT (0.00s)
