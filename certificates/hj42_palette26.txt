@@ -1,0 +1,3 @@
+# 26-periodic palette chi(0..25), omega=(0,2,3,5): c(w)=chi(<omega,type(w)> mod 26) is
+# line-free on [4]^13 (=> HJ(4,2)>=14) and NOT line-free on [4]^14 (sharp; Thm 3.10).
+10100111100100010011110010

@@ -1,0 +1,3 @@
+# 97-periodic palette chi(x)=ind_5(x) mod 3 (chi(0)=0): no monochromatic 4-term AP of
+# gap 1..96 => kappa_sum(4,3) >= 96; matches upper bound floor((W(4,3)-1)/3)-1 = 96.
+0011212102220122120002021220010120021112110110002200011011211120021010022120200021221022201212110

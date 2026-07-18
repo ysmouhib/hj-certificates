@@ -1,0 +1,4 @@
+# 3-colouring of a window of 56: no monochromatic homothet of {0, 1, 4} => G_3({0,1,4}) = 57
+# REGENERATED witness (SAT, repository rebuild). Any valid witness proves the bound;
+# replace with the thesis' original certificate if preferred.
+10012112002222100111200102210121010012221012101021022220

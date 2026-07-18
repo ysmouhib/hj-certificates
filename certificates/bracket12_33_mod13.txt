@@ -1,0 +1,3 @@
+# 13-periodic palette psi(0..12), omega=(0,5,7): no monochromatic line with <=12 active
+# coordinates in ANY dimension (Thm 4.10; check: all (b,k), b in Z13, 1<=k<=12).
+1001010012222

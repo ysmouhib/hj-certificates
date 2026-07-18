@@ -1,0 +1,5 @@
+# 2-colouring of a window of 20: no monochromatic homothet of {0,2,5}
+# => G_2({0,2,5}) = 21 (Prop 2.21 formula: 4D+1)
+# REGENERATED witness (SAT, repository rebuild). Any valid witness proves the bound;
+# replace with the thesis' original certificate if preferred.
+00110011001100110011
