@@ -7,10 +7,6 @@
 
 ![python3 verify_all.py — all certificates verified, zero SAT-solver dependencies](docs/img/verify_all.png)
 
-> **New records:** HJ(3,3) ≥ 22 (previous best 14) and HJ(4,2) ≥ 14 (previous 12),
-> each backed by an explicit certificate that re-verifies from scratch in seconds.
-
-
 ## Papers
 
 Two arXiv preprints extract and consolidate the record bounds proved here:
