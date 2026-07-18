@@ -1,4 +1,11 @@
 [![verify-certificates](https://github.com/ysmouhib/hj-certificates/actions/workflows/verify.yml/badge.svg)](https://github.com/ysmouhib/hj-certificates/actions/workflows/verify.yml)
+[![Python](https://img.shields.io/badge/python-3.10%2B%2C%20stdlib%20only-blue)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
+> **New records:** HJ(3,3) ≥ 22 (previous best 14) and HJ(4,2) ≥ 14 (previous 12),
+> each backed by an explicit certificate that re-verifies from scratch in seconds.
+
+![python3 verify_all.py — all certificates verified, zero SAT-solver dependencies](docs/img/verify_all.png)
 
 > **New records:** HJ(3,3) ≥ 22 (previous best 14) and HJ(4,2) ≥ 14 (previous 12),
 > each backed by an explicit certificate that re-verifies from scratch in seconds.
