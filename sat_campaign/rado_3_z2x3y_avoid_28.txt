@@ -1,0 +1,3 @@
+# 3-coloring of [0,27] with no monochromatic injective solution of z+2x=3y  =>  R_3 > 28
+# solver: sls
+1010122102010211202020121201

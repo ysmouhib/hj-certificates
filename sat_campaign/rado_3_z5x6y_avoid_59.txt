@@ -1,0 +1,3 @@
+# 3-coloring of [0,58] with no monochromatic injective solution of z+5x=6y  =>  R_3 > 59
+# solver: cadical195
+00102122102001021122020010122210100202211201001012212020010

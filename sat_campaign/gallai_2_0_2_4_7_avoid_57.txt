@@ -1,0 +1,3 @@
+# 2-coloring of [0,56] with no monochromatic homothet of [0, 2, 4, 7]  =>  G_2([0, 2, 4, 7]) > 57
+# solver: sls
+000001111001111110000000111111100011010000011111000111101

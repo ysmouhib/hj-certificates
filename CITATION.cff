@@ -8,9 +8,11 @@ authors:
 license: MIT
 repository-code: "https://github.com/ysmouhib/hj-certificates"
 year: 2026
+version: "2.0"
+date-released: "2026-07-24"
 references:
   - type: thesis
-    title: "Improving Bounds on Hales-Jewett Numbers: Symmetric Colorings, SAT Solvers, Line-Family Variants, and Forcing Structures"
+    title: "Improving Lower Bounds on Hales-Jewett Numbers: Symmetric Colorings, SAT Solvers, Line-Family Variants, and Forcing Structures"
     authors:
       - family-names: Mouhib
         given-names: Younes
@@ -28,7 +30,7 @@ references:
     year: 2026
     url: "https://arxiv.org/abs/2606.22155"
   - type: article
-    title: "One-Weight Colorings, the Symmetric Class, and Lower Bounds for Hales-Jewett Numbers"
+    title: "Lower Bounds for the Hales-Jewett Numbers via Symmetric and One-Weight Colorings"
     authors:
       - family-names: Mouhib
         given-names: Younes

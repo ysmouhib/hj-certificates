@@ -1,0 +1,3 @@
+# 2-coloring of [0,57] with no monochromatic homothet of [0, 2, 5, 7]  =>  G_2([0, 2, 5, 7]) > 58
+# solver: kissat404
+0110001011110001110000101100110011000001111000111101000110

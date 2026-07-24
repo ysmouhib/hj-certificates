@@ -1,0 +1,3 @@
+# 3-coloring of [0,55] with no monochromatic homothet of [0, 1, 4]  =>  G_3([0, 1, 4]) > 56
+# solver: kissat404
+01201222211020000112221101012012202112200001120210021121

@@ -1,0 +1,3 @@
+# 2-coloring of [0,57] with no monochromatic homothet of [0, 1, 2, 7]  =>  G_2([0, 1, 2, 7]) > 58
+# solver: cadical195
+0101110010011010001101100101101100101110010011010011000110

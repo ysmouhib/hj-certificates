@@ -14,14 +14,17 @@ pattern would show as a wrong count.  Forcing (unsatisfiability) claims are
 NOT re-proved here -- they rest on the SAT runs recorded in logs/ -- but their
 finite consequences (sharpness, counts, boundaries) are.
 """
-import itertools, json, os, sys
+import itertools, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CERT = os.path.join(HERE, "certificates")
 DATA = os.path.join(HERE, "data")
 FAIL = []
+CHECKS = 0
 
 def report(ok, label, detail):
+    global CHECKS
+    CHECKS += 1
     print(f"[{'PASS' if ok else 'FAIL'}] {label:<58} {detail}")
     if not ok: FAIL.append(label)
 
@@ -277,7 +280,28 @@ report(frc(0) and len(singles) == 4 and doubles == 0,
        "Prop 7.16: forcing boundary on T_4^(3) (four 19-triple minima)",
        f"20 triples; forcing single-omissions={len(singles)}, double-omissions={doubles}")
 
+# ---------- July 2026 SAT campaign (sat_campaign/) ----------
+# Runs the three standalone verifiers of the consolidated article in place:
+# every Appendix-D certificate, the [3]^3 census, both simplex tables, and
+# every coloring recorded in results.json. Standard library only.
+import subprocess
+CAMP = os.path.join(HERE, "sat_campaign")
+SUB = 0
+for script, marker, pat in [
+        ("verify_certificates.py", "ALL CERTIFICATES VERIFIED", r"(?m)^PASS\b"),
+        ("verify_hj.py", "ALL CHECKS PASSED", r"RESULT: VERIFIED"),
+        ("verify_addendum.py", "ALL ADDENDUM CERTIFICATES VERIFIED",
+         r"EXACT: value|gap: >")]:
+    pr = subprocess.run([sys.executable, script], cwd=CAMP,
+                        capture_output=True, text=True)
+    n = len(re.findall(pat, pr.stdout))
+    SUB += n
+    ok = pr.returncode == 0 and marker in pr.stdout
+    report(ok, f"sat_campaign/{script}",
+           f"{n} sub-checks; ends: {marker if ok else 'FAILURE'}")
+
 print("=" * 100)
 if FAIL:
     print("FAILURES:", FAIL); sys.exit(1)
-print("ALL CERTIFICATES AND DATA CLAIMS VERIFIED"); sys.exit(0)
+print(f"ALL CERTIFICATES AND DATA CLAIMS VERIFIED "
+      f"({CHECKS} top-level checks, {SUB} campaign sub-checks)"); sys.exit(0)

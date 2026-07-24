@@ -1,0 +1,227 @@
+[
+ [
+  "gallai_2_0_1_2_4_avoid_37.txt",
+  37,
+  "2-coloring of [0,36] with no monochromatic homothet of [0, 1, 2, 4]  =>  G_2([0, 1, 2, 4]) > 37"
+ ],
+ [
+  "gallai_2_0_1_2_6_avoid_55.txt",
+  55,
+  "2-coloring of [0,54] with no monochromatic homothet of [0, 1, 2, 6]  =>  G_2([0, 1, 2, 6]) > 55"
+ ],
+ [
+  "gallai_2_0_1_2_7_avoid_58.txt",
+  58,
+  "2-coloring of [0,57] with no monochromatic homothet of [0, 1, 2, 7]  =>  G_2([0, 1, 2, 7]) > 58"
+ ],
+ [
+  "gallai_2_0_1_2_avoid_8.txt",
+  8,
+  "2-coloring of [0,7] with no monochromatic homothet of [0, 1, 2]  =>  G_2([0, 1, 2]) > 8"
+ ],
+ [
+  "gallai_3_0_1_2_avoid_26.txt",
+  26,
+  "3-coloring of [0,25] with no monochromatic homothet of [0, 1, 2]  =>  G_3([0, 1, 2]) > 26"
+ ],
+ [
+  "gallai_2_0_1_3_4_avoid_40.txt",
+  40,
+  "2-coloring of [0,39] with no monochromatic homothet of [0, 1, 3, 4]  =>  G_2([0, 1, 3, 4]) > 40"
+ ],
+ [
+  "gallai_2_0_1_3_6_avoid_51.txt",
+  51,
+  "2-coloring of [0,50] with no monochromatic homothet of [0, 1, 3, 6]  =>  G_2([0, 1, 3, 6]) > 51"
+ ],
+ [
+  "gallai_2_0_1_3_7_avoid_59.txt",
+  59,
+  "2-coloring of [0,58] with no monochromatic homothet of [0, 1, 3, 7]  =>  G_2([0, 1, 3, 7]) > 59"
+ ],
+ [
+  "gallai_2_0_1_3_avoid_12.txt",
+  12,
+  "2-coloring of [0,11] with no monochromatic homothet of [0, 1, 3]  =>  G_2([0, 1, 3]) > 12"
+ ],
+ [
+  "gallai_3_0_1_3_avoid_41.txt",
+  41,
+  "3-coloring of [0,40] with no monochromatic homothet of [0, 1, 3]  =>  G_3([0, 1, 3]) > 41"
+ ],
+ [
+  "gallai_4_0_1_3_avoid_93.txt",
+  93,
+  "4-coloring of [0,92] with no monochromatic homothet of [0, 1, 3]  =>  G_4([0, 1, 3]) > 93"
+ ],
+ [
+  "rado_2_z2x3y_avoid_12.txt",
+  12,
+  "2-coloring of [0,11] with no monochromatic injective solution of z+2x=3y  =>  R_2 > 12"
+ ],
+ [
+  "rado_3_z2x3y_avoid_28.txt",
+  28,
+  "3-coloring of [0,27] with no monochromatic injective solution of z+2x=3y  =>  R_3 > 28"
+ ],
+ [
+  "rado_4_z2x3y_avoid_58.txt",
+  58,
+  "4-coloring of [0,57] with no monochromatic injective solution of z+2x=3y  =>  R_4 > 58"
+ ],
+ [
+  "rado_4_z2x3y_avoid_57.txt",
+  57,
+  "4-coloring of [0,56] with no monochromatic injective solution of z+2x=3y  =>  R_4 > 57 (superseded intermediate; best certificate: rado_4_z2x3y_avoid_58.txt)"
+ ],
+ [
+  "gallai_2_0_1_4_5_avoid_44.txt",
+  44,
+  "2-coloring of [0,43] with no monochromatic homothet of [0, 1, 4, 5]  =>  G_2([0, 1, 4, 5]) > 44"
+ ],
+ [
+  "gallai_2_0_1_4_6_avoid_57.txt",
+  57,
+  "2-coloring of [0,56] with no monochromatic homothet of [0, 1, 4, 6]  =>  G_2([0, 1, 4, 6]) > 57"
+ ],
+ [
+  "gallai_2_0_1_4_7_avoid_61.txt",
+  61,
+  "2-coloring of [0,60] with no monochromatic homothet of [0, 1, 4, 7]  =>  G_2([0, 1, 4, 7]) > 61"
+ ],
+ [
+  "gallai_2_0_1_4_7_avoid_59.txt",
+  59,
+  "2-coloring of [0,58] with no monochromatic homothet of [0, 1, 4, 7]  =>  G_2([0, 1, 4, 7]) > 59 (superseded intermediate; best certificate: gallai_2_0_1_4_7_avoid_61.txt)"
+ ],
+ [
+  "gallai_3_0_1_4_avoid_56.txt",
+  56,
+  "3-coloring of [0,55] with no monochromatic homothet of [0, 1, 4]  =>  G_3([0, 1, 4]) > 56"
+ ],
+ [
+  "rado_2_z3x4y_avoid_16.txt",
+  16,
+  "2-coloring of [0,15] with no monochromatic injective solution of z+3x=4y  =>  R_2 > 16"
+ ],
+ [
+  "rado_3_z3x4y_avoid_53.txt",
+  53,
+  "3-coloring of [0,52] with no monochromatic injective solution of z+3x=4y  =>  R_3 > 53"
+ ],
+ [
+  "gallai_2_0_1_5_7_avoid_61.txt",
+  61,
+  "2-coloring of [0,60] with no monochromatic homothet of [0, 1, 5, 7]  =>  G_2([0, 1, 5, 7]) > 61"
+ ],
+ [
+  "gallai_2_0_1_5_7_avoid_56.txt",
+  56,
+  "2-coloring of [0,55] with no monochromatic homothet of [0, 1, 5, 7]  =>  G_2([0, 1, 5, 7]) > 56 (superseded intermediate; best certificate: gallai_2_0_1_5_7_avoid_61.txt)"
+ ],
+ [
+  "gallai_3_0_1_5_avoid_69.txt",
+  69,
+  "3-coloring of [0,68] with no monochromatic homothet of [0, 1, 5]  =>  G_3([0, 1, 5]) > 69"
+ ],
+ [
+  "rado_2_z4x5y_avoid_18.txt",
+  18,
+  "2-coloring of [0,17] with no monochromatic injective solution of z+4x=5y  =>  R_2 > 18"
+ ],
+ [
+  "rado_3_z4x5y_avoid_54.txt",
+  54,
+  "3-coloring of [0,53] with no monochromatic injective solution of z+4x=5y  =>  R_3 > 54"
+ ],
+ [
+  "gallai_2_0_1_6_7_avoid_78.txt",
+  78,
+  "2-coloring of [0,77] with no monochromatic homothet of [0, 1, 6, 7]  =>  G_2([0, 1, 6, 7]) > 78"
+ ],
+ [
+  "gallai_3_0_1_6_avoid_81.txt",
+  81,
+  "3-coloring of [0,80] with no monochromatic homothet of [0, 1, 6]  =>  G_3([0, 1, 6]) > 81"
+ ],
+ [
+  "rado_2_z5x6y_avoid_24.txt",
+  24,
+  "2-coloring of [0,23] with no monochromatic injective solution of z+5x=6y  =>  R_2 > 24"
+ ],
+ [
+  "rado_3_z5x6y_avoid_59.txt",
+  59,
+  "3-coloring of [0,58] with no monochromatic injective solution of z+5x=6y  =>  R_3 > 59"
+ ],
+ [
+  "gallai_3_0_1_7_avoid_86.txt",
+  86,
+  "3-coloring of [0,85] with no monochromatic homothet of [0, 1, 7]  =>  G_3([0, 1, 7]) > 86"
+ ],
+ [
+  "gallai_2_0_2_3_6_avoid_53.txt",
+  53,
+  "2-coloring of [0,52] with no monochromatic homothet of [0, 2, 3, 6]  =>  G_2([0, 2, 3, 6]) > 53"
+ ],
+ [
+  "gallai_2_0_2_3_7_avoid_61.txt",
+  61,
+  "2-coloring of [0,60] with no monochromatic homothet of [0, 2, 3, 7]  =>  G_2([0, 2, 3, 7]) > 61"
+ ],
+ [
+  "gallai_2_0_2_3_7_avoid_51.txt",
+  51,
+  "2-coloring of [0,50] with no monochromatic homothet of [0, 2, 3, 7]  =>  G_2([0, 2, 3, 7]) > 51 (superseded intermediate; best certificate: gallai_2_0_2_3_7_avoid_61.txt)"
+ ],
+ [
+  "gallai_2_0_2_4_5_avoid_43.txt",
+  43,
+  "2-coloring of [0,42] with no monochromatic homothet of [0, 2, 4, 5]  =>  G_2([0, 2, 4, 5]) > 43"
+ ],
+ [
+  "gallai_2_0_2_4_7_avoid_60.txt",
+  60,
+  "2-coloring of [0,59] with no monochromatic homothet of [0, 2, 4, 7]  =>  G_2([0, 2, 4, 7]) > 60"
+ ],
+ [
+  "gallai_2_0_2_4_7_avoid_57.txt",
+  57,
+  "2-coloring of [0,56] with no monochromatic homothet of [0, 2, 4, 7]  =>  G_2([0, 2, 4, 7]) > 57 (superseded intermediate; best certificate: gallai_2_0_2_4_7_avoid_60.txt)"
+ ],
+ [
+  "gallai_2_0_2_5_7_avoid_58.txt",
+  58,
+  "2-coloring of [0,57] with no monochromatic homothet of [0, 2, 5, 7]  =>  G_2([0, 2, 5, 7]) > 58"
+ ],
+ [
+  "gallai_2_0_2_5_7_avoid_54.txt",
+  54,
+  "2-coloring of [0,53] with no monochromatic homothet of [0, 2, 5, 7]  =>  G_2([0, 2, 5, 7]) > 54 (superseded intermediate; best certificate: gallai_2_0_2_5_7_avoid_58.txt)"
+ ],
+ [
+  "gallai_3_0_2_5_avoid_76.txt",
+  76,
+  "3-coloring of [0,75] with no monochromatic homothet of [0, 2, 5]  =>  G_3([0, 2, 5]) > 76"
+ ],
+ [
+  "gallai_3_0_2_7_avoid_86.txt",
+  86,
+  "3-coloring of [0,85] with no monochromatic homothet of [0, 2, 7]  =>  G_3([0, 2, 7]) > 86"
+ ],
+ [
+  "gallai_2_0_3_4_5_avoid_43.txt",
+  43,
+  "2-coloring of [0,42] with no monochromatic homothet of [0, 3, 4, 5]  =>  G_2([0, 3, 4, 5]) > 43"
+ ],
+ [
+  "gallai_2_0_3_4_7_avoid_78.txt",
+  78,
+  "2-coloring of [0,77] with no monochromatic homothet of [0, 3, 4, 7]  =>  G_2([0, 3, 4, 7]) > 78"
+ ],
+ [
+  "gallai_2_0_3_4_7_avoid_56.txt",
+  56,
+  "2-coloring of [0,55] with no monochromatic homothet of [0, 3, 4, 7]  =>  G_2([0, 3, 4, 7]) > 56 (superseded intermediate; best certificate: gallai_2_0_3_4_7_avoid_78.txt)"
+ ]
+]

@@ -1,0 +1,3 @@
+# 3-coloring of [0,75] with no monochromatic homothet of [0, 2, 5]  =>  G_3([0, 2, 5]) > 76
+# solver: article certificate
+1020111002012212220102011100201221221010201110020122122001020111002012212200

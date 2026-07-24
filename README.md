@@ -26,6 +26,48 @@ Hales–Jewett Numbers*, [arXiv:2607.02226](https://arxiv.org/abs/2607.02226).
 **Interactive companion:** the
 [Hales–Jewett Explorer](https://ysmouhib.github.io/hales-jewett-explorer/).
 
+---
+
+## July 2026 update (v2.0) — consolidated article and SAT campaign
+
+The two companion papers above are consolidated and superseded by the
+single-author article
+
+> **Y. Mouhib**, *Lower Bounds for the Hales–Jewett Numbers via Symmetric and
+> One-Weight Colorings* (2026).
+
+This release adds the article's full SAT-computation program as the
+self-contained directory **`sat_campaign/`**:
+
+| File(s) | Role |
+|---|---|
+| `gallai_rado_sat.py` | The SAT engine of Section 5.3: encoder, first-occurrence symmetry breaking, stochastic local search, six-solver portfolio, run database. |
+| `results.json` | The run database: status, solver, wall time and coloring for every settled instance. |
+| `gallai_*_avoid_*.txt`, `rado_*_avoid_*.txt` | 45 machine-readable avoidance certificates (with `manifest.json` index; seven superseded intermediates are retained and annotated). |
+| `verify_certificates.py` | Re-verifies every certificate displayed in the article, incl. all Appendix-D SAT certificates and the full [3]^3 census — 52 checks (census block takes a few minutes). |
+| `verify_hj.py` | Byte-for-byte verifier for the two simplex tables T21 and T13, all corner tuples, plus a random full-grid line sample. |
+| `verify_addendum.py` | Re-verifies every coloring recorded in `results.json`. |
+| `export_certificates.py` | Regenerates the certificate files from `results.json`. |
+| `ADDENDUM.md` | Chronicle of the campaign (superseded by Section 5.3 and Appendices D–E of the article). |
+
+New exact values: eighteen two-color Gallai numbers of four-point sets (up to
+G₂({0,1,6,7}) = G₂({0,3,4,7}) = 79), G₃({0,1,5}) = 70, the flagship
+**G₃({0,2,5}) = 77** (hence HJ(3,3) ≥ 16 by one line), and eight Rado numbers
+R_r(z+kx=(k+1)y) for 2 ≤ k ≤ 5, r ∈ {2,3}; plus R₄(z+2x=3y) ≥ 59 and
+G₄({0,1,3}) ≥ 94.
+
+**DRAT-validated flagship refutation.** `logs/drat_flagship/` contains a
+machine-checkable proof of unsatisfiability for the flagship instance
+(N = 77, 231 variables, 2204 clauses): CaDiCaL emitted a 119 MB DRAT proof
+(2,021,700 lemmas, no RAT steps), validated by `drat-trim` (`s VERIFIED`,
+165.6 s; 1,457,406 lemmas in the trimmed core). The proof ships
+xz-compressed with its SHA-256 hash and the checker log;
+`drat_flagship.sh` reproduces the entire pipeline from a bare machine.
+
+`verify_all.py` now also drives the three campaign verifiers and reports a
+grand total (top-level checks + campaign sub-checks). It remains standard
+library only; allow ~10 minutes for the two census blocks.
+
 ## Quick start
 
 ```
@@ -37,7 +79,6 @@ repository by direct enumeration — 26 checks — and prints, for each, the
 number of forbidden patterns checked and the number found monochromatic
 (which must be zero). No dependencies are needed.
 
-![python3 verify_all.py — all certificates and data claims verified, zero SAT-solver dependencies](verify_all.png)
 
 ## Repository layout
 

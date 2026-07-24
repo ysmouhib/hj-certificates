@@ -1,0 +1,3 @@
+# 3-coloring of [0,40] with no monochromatic homothet of [0, 1, 3]  =>  G_3([0, 1, 3]) > 41
+# solver: cadical195
+00110022012012211100021221001202220121102
