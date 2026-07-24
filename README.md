@@ -1,9 +1,7 @@
 [![verify-certificates](https://github.com/ysmouhib/hj-certificates/actions/workflows/verify.yml/badge.svg)](https://github.com/ysmouhib/hj-certificates/actions/workflows/verify.yml)
 [![Python](https://img.shields.io/badge/python-3.10%2B%2C%20stdlib%20only-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-<!-- TODO(v2.0): after the GitHub release mints the Zenodo DOI, add the badge here:
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
--->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21537624.svg)](https://doi.org/10.5281/zenodo.21537624)
 
 # Hales–Jewett lower-bound certificates and SAT encoders
 
