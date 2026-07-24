@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this code or these certificates, please cite the thesis."
+message: "If you use this code or these certificates, please cite the article and the thesis."
 title: "Hales-Jewett lower-bound certificates and SAT encoders"
 authors:
   - family-names: Mouhib
@@ -11,8 +11,16 @@ year: 2026
 version: "2.0"
 date-released: "2026-07-24"
 references:
+  - type: article
+    title: "Lower Bounds for the Hales-Jewett Numbers via Symmetric and One-Weight Colorings"
+    authors:
+      - family-names: Mouhib
+        given-names: Younes
+    year: 2026
+    url: "https://arxiv.org/abs/2606.22155"
+    notes: "Consolidated single-author article; appears as v2 of arXiv:2606.22155 (supersedes both earlier preprints)."
   - type: thesis
-    title: "Improving Lower Bounds on Hales-Jewett Numbers: Symmetric Colorings, SAT Solvers, Line-Family Variants, and Forcing Structures"
+    title: "Improving Bounds on Hales-Jewett Numbers: Symmetric Colorings, SAT Solvers, Line-Family Variants, and Forcing Structures"
     authors:
       - family-names: Mouhib
         given-names: Younes
@@ -21,18 +29,10 @@ references:
     year: 2026
     thesis-type: "Master's thesis"
   - type: article
-    title: "Improved Lower Bounds for the Hales-Jewett Numbers via Symmetric Colorings"
-    authors:
-      - family-names: Mouhib
-        given-names: Younes
-      - family-names: Halbeisen
-        given-names: Lorenz
-    year: 2026
-    url: "https://arxiv.org/abs/2606.22155"
-  - type: article
-    title: "Lower Bounds for the Hales-Jewett Numbers via Symmetric and One-Weight Colorings"
+    title: "One-Weight Colorings, the Symmetric Class, and Lower Bounds for Hales-Jewett Numbers"
     authors:
       - family-names: Mouhib
         given-names: Younes
     year: 2026
     url: "https://arxiv.org/abs/2607.02226"
+    notes: "Superseded by the consolidated article above."

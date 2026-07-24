@@ -1,6 +1,9 @@
 [![verify-certificates](https://github.com/ysmouhib/hj-certificates/actions/workflows/verify.yml/badge.svg)](https://github.com/ysmouhib/hj-certificates/actions/workflows/verify.yml)
 [![Python](https://img.shields.io/badge/python-3.10%2B%2C%20stdlib%20only-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+<!-- TODO(v2.0): after the GitHub release mints the Zenodo DOI, add the badge here:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+-->
 
 # Hales–Jewett lower-bound certificates and SAT encoders
 
@@ -34,7 +37,8 @@ The two companion papers above are consolidated and superseded by the
 single-author article
 
 > **Y. Mouhib**, *Lower Bounds for the Hales–Jewett Numbers via Symmetric and
-> One-Weight Colorings* (2026).
+> One-Weight Colorings* (2026), appearing as v2 of
+> [arXiv:2606.22155](https://arxiv.org/abs/2606.22155).
 
 This release adds the article's full SAT-computation program as the
 self-contained directory **`sat_campaign/`**:
@@ -45,28 +49,34 @@ self-contained directory **`sat_campaign/`**:
 | `results.json` | The run database: status, solver, wall time and coloring for every settled instance. |
 | `gallai_*_avoid_*.txt`, `rado_*_avoid_*.txt` | 45 machine-readable avoidance certificates (with `manifest.json` index; seven superseded intermediates are retained and annotated). |
 | `verify_certificates.py` | Re-verifies every certificate displayed in the article, incl. all Appendix-D SAT certificates and the full [3]^3 census — 52 checks (census block takes a few minutes). |
-| `verify_hj.py` | Byte-for-byte verifier for the two simplex tables T21 and T13, all corner tuples, plus a random full-grid line sample. |
+| `verify_hj.py` | Byte-for-byte verifier for the two simplex tables T₂₁ and T₁₃, all corner tuples, plus a random full-grid line sample. |
 | `verify_addendum.py` | Re-verifies every coloring recorded in `results.json`. |
+| `independent_refutation.py` | Clean-room re-refutation: a 30-line encoder written from the definitions re-proves every forcing claim (UNSAT at the value, SAT one below) with an independent backend — `batch` mode ends `BATCH: ALL OK`. |
 | `export_certificates.py` | Regenerates the certificate files from `results.json`. |
 | `ADDENDUM.md` | Chronicle of the campaign (superseded by Section 5.3 and Appendices D–E of the article). |
 
-New exact values: eighteen two-color Gallai numbers of four-point sets (up to
-G₂({0,1,6,7}) = G₂({0,3,4,7}) = 79), G₃({0,1,5}) = 70, the flagship
+Twenty-eight new exact values: eighteen two-color Gallai numbers of four-point
+sets (up to G₂({0,1,6,7}) = G₂({0,3,4,7}) = 79), G₃({0,1,5}) = 70, the flagship
 **G₃({0,2,5}) = 77** (hence HJ(3,3) ≥ 16 by one line), and eight Rado numbers
-R_r(z+kx=(k+1)y) for 2 ≤ k ≤ 5, r ∈ {2,3}; plus R₄(z+2x=3y) ≥ 59 and
-G₄({0,1,3}) ≥ 94.
+R_r(z+kx=(k+1)y) for 2 ≤ k ≤ 5, r ∈ {2,3}; plus the lower bounds
+R₄(z+2x=3y) ≥ 59 and G₄({0,1,3}) ≥ 94.
 
 **DRAT-validated flagship refutation.** `logs/drat_flagship/` contains a
 machine-checkable proof of unsatisfiability for the flagship instance
 (N = 77, 231 variables, 2204 clauses): CaDiCaL emitted a 119 MB DRAT proof
-(2,021,700 lemmas, no RAT steps), validated by `drat-trim` (`s VERIFIED`,
-165.6 s; 1,457,406 lemmas in the trimmed core). The proof ships
-xz-compressed with its SHA-256 hash and the checker log;
-`drat_flagship.sh` reproduces the entire pipeline from a bare machine.
+(2,021,700 lemmas, no RAT steps — a pure reverse-unit-propagation proof),
+validated by `drat-trim` (`s VERIFIED`, 165.6 s; 1,457,406 lemmas in the
+trimmed core). The proof ships xz-compressed with its SHA-256 hash and the
+checker log; `drat_flagship.sh` reproduces the entire pipeline from a bare
+machine. The proof certifies the symmetry-broken CNF; see the article's
+satisfiability-preservation remark (or rerun on the unbroken encoding,
+`drat_flagship.sh` documents both).
 
-`verify_all.py` now also drives the three campaign verifiers and reports a
-grand total (top-level checks + campaign sub-checks). It remains standard
-library only; allow ~10 minutes for the two census blocks.
+![All verification pipelines pass](docs/verification.png)
+
+`verify_all.py` also drives the three campaign verifiers and reports a grand
+total (top-level checks + campaign sub-checks). It remains standard library
+only; allow ~10 minutes for the two census blocks.
 
 ## Quick start
 
@@ -75,8 +85,10 @@ python3 verify_all.py
 ```
 
 This reproduces every avoidance certificate and every finite data claim in the
-repository by direct enumeration — 26 checks — and prints, for each, the
-number of forbidden patterns checked and the number found monochromatic
+repository by direct enumeration — 26 top-level checks, then the three
+campaign verifiers in `sat_campaign/` (each printing its own sub-check count)
+— and ends with a self-reported grand total. For each check the script prints
+the number of forbidden patterns checked and the number found monochromatic
 (which must be zero). No dependencies are needed.
 
 
@@ -87,6 +99,7 @@ verify_all.py         master direct-enumeration verifier (stdlib only)
 certificates/         the certificates themselves, plain text
 data/                 large certificates (JSON), censuses, tables, forcing families
 logs/                 SAT re-confirmation runs for every forcing claim
+sat_campaign/         the article's SAT program: engine, database, 45 certificates
 src/                  SAT encoders, search drivers, and reusable verifiers
 requirements.txt      dependencies for the SAT encoders only
 ```
@@ -113,7 +126,7 @@ time).
 | `gallai_0156_r2_window79.txt` [R] | G₂({0,1,5,6}) = 80 | window of 79 |
 | `gallai_D_le9_r2/` (14 files) [R] | Prop 2.21 | all primitive three-point classes of diameter ≤ 9; values match the Brown–Landman–Mishna / Kim–Rho formula, incl. the exceptional 20 and 36 |
 | `gallai_013_window93.txt` [O] | G₄({0,1,3}) ≥ 94 | window of 93, {0,1,3}-homothets only (contains reflected copies — see note) |
-| `rado_z2x3y_len56.txt` [O] | R₄(z+2x=3y) ≥ 57 | window of 56, no monochromatic *injective solution* (both patterns {0,1,3} and {0,2,3}) |
+| `rado_z2x3y_len56.txt` [O] | R₄(z+2x=3y) ≥ 57 | window of 56, no monochromatic *injective solution* (both patterns {0,1,3} and {0,2,3}); superseded by the 58-cell certificate in `sat_campaign/` (R₄ ≥ 59) |
 | `ksum33_period12.txt` [O] | κ_sum(3,3) = 11 | 12-periodic palette, no monochromatic 3-AP of gap ≤ 11 (forcing at length 27: `logs/`) |
 | `ksum43_period97.txt` [T] | κ_sum(4,3) = 96 | 97-periodic power-residue palette (≡ ind₅ mod 3), no monochromatic 4-AP of gap ≤ 96; ceiling exact |
 | `bracket12_33_mod13.txt` [T] | HJ^[12](3,3) = ∞ | 13-periodic palette, ω=(0,5,7); sharp at k=13 |
@@ -126,11 +139,12 @@ time).
 
 Note on the two {0,1,3}-related certificates: `gallai_013_window93.txt` avoids
 {0,1,3}-homothets **only** and does contain monochromatic reflected copies
-b + k·{0,2,3}; the Rado bound rests on the stronger `rado_z2x3y_len56.txt`,
-which is free of both orientation classes at once — every injective solution
-of z + 2x = 3y. One-sided homothety avoidance and solution-freeness are
-genuinely different thresholds; the two certificates exhibit the difference
-explicitly.
+b + k·{0,2,3}; the Rado bound rests on the stronger certificates in
+`sat_campaign/` (`rado_4_z2x3y_avoid_58.txt`, and the annotated superseded
+`..._avoid_57.txt`), which are free of both orientation classes at once —
+every injective solution of z + 2x = 3y. One-sided homothety avoidance and
+solution-freeness are genuinely different thresholds; the certificates exhibit
+the difference explicitly.
 
 ## Data
 
@@ -160,6 +174,13 @@ dual (RC2 optimum = 3 monochromatic homothets) and the degree-3 GF(2)
 Nullstellensatz independence check. The thesis' original runs used
 independent encoders and solvers.
 
+For the SAT campaign of the consolidated article, `sat_campaign/` adds three
+further layers: every avoidance coloring is re-verified by enumeration
+(`verify_addendum.py`); every forcing claim is re-proved from the definitions
+by the clean-room `independent_refutation.py` (UNSAT at the value, SAT one
+below, on an independent backend); and the flagship refutation carries a
+DRAT proof validated by `drat-trim` (`logs/drat_flagship/`).
+
 ## Source
 
 `src/` contains the original encoders (`simplex_encoder.py`,
@@ -177,10 +198,11 @@ independent encoders and solvers.
 
 ## Dependencies
 
-The verifiers (`verify_all.py`, `src/verify_certificates.py`) need only
+The verifiers (`verify_all.py`, everything in `sat_campaign/` except the
+engine's solver portfolio, and `src/verify_certificates.py`) need only
 Python ≥ 3.8. The SAT drivers need `pip install -r requirements.txt`.
 
 ## License
 
-MIT, see `LICENSE`. If you use this material, please cite the thesis
-(`CITATION.cff`).
+MIT, see `LICENSE`. If you use this material, please cite the article and the
+thesis (`CITATION.cff`).

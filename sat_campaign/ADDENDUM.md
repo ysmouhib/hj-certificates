@@ -135,8 +135,9 @@ pushed there as-is).
 * `G_3({0,1,6}) ∈ [82, ?)`: `N = 82` undecided after several portfolio
   attempts (up to 900 s); `G_3({0,1,7}), G_3({0,2,7}) ∈ [87, ?)`.
 * All UNSAT claims above are single-solver CDCL proofs with the symmetry
-  broken by construction; for publication-grade certainty, emitting and
-  checking DRAT proofs (Kissat/CaDiCaL + drat-trim) is the natural next step.
+  broken by construction. The flagship refutation now ships a DRAT proof
+  validated with `drat-trim` (`logs/drat_flagship/`); logging the remaining
+  instances the same way is the natural next step.
 
 ---
 
